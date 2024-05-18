@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(8, 28, 25, 1);
+  font-display: swap;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.main-view-section .wrapper-alignment {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+}
+
+.sub-container {
+  padding: 0 40px;
+  margin: 0 0 40px 0;
+}
+
+.sourcescredits {
+  background-color: #1f312f;
+  padding: 32px;
+  margin: 100px 0 0 0;
+  border-radius: 20px;
+}
+h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+
+.table table {
+  width: 100%;
+  border: 1px solid rgb(255 255 255 / 0.25);
+  border-collapse: collapse;
+}
+.table table thead tr {
+  border: 1px solid rgb(255 255 255 / 0.25);
+}
+.table table thead tr th {
+  padding: 14px;
+  border: 1px solid rgb(255 255 255 / 0.25);
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #000000;
+  text-align: left;
+}
+.table table tbody tr td {
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  
+  text-align: left;
+  color: #fff;
+  border: 1px solid rgb(255 255 255 / 0.25);
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.text-success {
+  color: #3c763d;
+}
+
+.alert-info {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #bce8f1;
+  border-radius: 4px;
+  color: #31708f;
+  background-color: #d9edf7;
+}
+
+
+.underline-style {
+  border-bottom: 1px solid #dff0d8; 
+  padding-bottom: 1px; 
+  display: inline-block; 
+}
+
+.ri-honour-line {
+  width: 100%; /* Adjust the width as needed */
+  height: 2px; /* Adjust the height or thickness of the line */
+  background-color: #000; /* Adjust the color of the line */
+  margin: 10px 0; /* Adjust the margin as needed */
+}
+
+@media (max-width:768px) {
+  .main-view-section .wrapper-alignment {
+    grid-template-columns: 1fr;    display: block;
+    gap: 0;
+  }
+  .sub-container {
+    padding: 0 20px;
+  }
+  .sourcescredits  {
+    padding: 20px;
+  }
+
+  .table {
+    overflow: auto;
+  }
+}

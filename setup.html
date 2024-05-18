@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/GettingStarted.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="shortcut icon" href="images/favicon.webp">
+  <title>Setup</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-alignment">
+      <div class="logo-alignment">
+        <a href="index.html">
+          <img src="Images/Logo/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div onclick="myFunction()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+          <path opacity="1" fill="#fff"
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </div>
+  </header>
+  <div class="mobile-landing-header-design mobile-landing-hidden" id="mobilemenu">
+    <div class="sidebar-header-alignment">
+      <a href="index.html">
+        <img src="Images/Logo/logo.png" alt="logo" />
+      </a>
+      <div onclick="myFunction()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+          <path opacity="1" fill="#fff"
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+      </div>
+    </div>
+    <div class="sidebar-body">
+      <div class="sidebar-alignment">
+        <div class="logo-alignment">
+          <a href="index.html">
+            <img src="Images/Logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="sidebar-details-alignment">
+          <a href="index.html">
+            <div class="listMenuItem active">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Introduction</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="technology-used.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Technology Used</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a>
+            <div class="listMenuItem" id="toggleButton">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Folder Structure</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent">
+            <a href="admin.html"> - Frontend </a>
+            <a href="backend.html"> - Backend </a>
+          </div>
+          <a href="setup.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Setup</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="sass-customization.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Scss Customization</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton1">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Features</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent1">
+            <a href="admin-feature.html"> - Admin </a>
+            <a href="super-admin.html"> - Super Admin </a>
+            <a href="user.html"> - User </a>
+          </div>
+          <a href="sources-credits.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Sources & Credits</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="changelog.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Changelog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-view-section">
+    <div class="wrapper-alignment">
+      <div class="sidebar-alignment sidebar-alignment-hide">
+        <div class="logo-alignment">
+          <a href="index.html">
+            <img src="Images/Logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="sidebar-details-alignment">
+          <a href="index.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Introduction</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="technology-used.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Technology Used</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a>
+            <div class="listMenuItem" id="toggleButton2">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Folder Structure</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent2">
+            <a href="admin.html"> - Frontend </a>
+            <a href="backend.html"> - Backend </a>
+          </div>
+          <a href="setup.html">
+            <div class="listMenuItem active">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Setup</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="sass-customization.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Scss Customization</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton3">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Features</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent3">
+            <a href="admin-feature.html"> - Admin </a>
+            <a href="super-admin.html"> - Super Admin </a>
+            <a href="user.html"> - User </a>
+          </div>
+          <a href="sources-credits.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Sources & Credits</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="changelog.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Changelog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="sub-container">
+        <div class="introducation">
+          <h4 class="underline-style">Setup VTalkz Guide</h4>
+          <p>Discover the power of our advanced chatbot, seamlessly blending the robust capabilities of React and Python
+            to deliver a cutting-edge user experience. Whether you're a business owner looking to enhance customer
+            interactions or a developer eager to explore the potential of AI-driven conversations, our chatbot has you
+            covered.</p>
+          <p class="alert alert-info">Please follow the below steps to setup this project.</p>
+          <!-- Frontend setup start -->
+        </div>
+        <div class="introducation">
+          <h4 class="underline-style">React Js Setup</h4>
+          <ul>
+            <li class="subheading">Install Node.js and npm: </li>
+          </ul>
+          <p class="details">
+            Ensure you have Node.js and npm (Node Package Manager) installed on your machine. You can download and
+            install them from the official website: <a style="color: #3582e7;" target="_blank"
+              href="https://nodejs.org/en">Node.js</a> Make sure you are using Node version >= 18.*.
+          </p>
+          <ul>
+            <li class="subheading">Git</li>
+          </ul>
+          <p class="details">
+            Make sure to have Git installed globally & running on your computer. If you already have installed git on
+            your computer, you can skip this step.
+          </p>
+
+          <h4>Please run the below commands from the <code class="cod">Frontend</code> folder.</h4>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th align="left">Command</th>
+                  <th align="left">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>npm install </td>
+                  <td>To install all the required dependencies in the <code>'node_modules'</code> folder, simply run
+                    <code>'npm install'</code> without any arguments. This command will resolve the necessary
+                    dependencies listed in the <code>'package.json'</code> file.If you encounter any errors during the
+                    installation, please ensure that your Node.js version matches the one specified above.
+                    Alternatively, you can try using <code>'npm install --force'</code> to forcefully install the
+                    dependencies.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>env</td>
+                  <td> Duplicate the <code>.env.example</code> file and rename it to <code>.env</code>.Open the
+                    <code>.env</code> file in
+                    a text editor of your choice. Look for a placeholder related to the backend URL, often represented
+                    as <code>SKIP_PREFLIGHT_CHECK</code> or something similar in React projects. Replace the placeholder
+                    with the actual
+                    URL of your backend server.Save the changes to the <code>.env</code> file.
+                  </td>
+                </tr>
+                <tr>
+                  <td>npm start </td>
+                  <td>
+                    Runs the project locally, starts the development server and watches for any changes in your code,
+                    including your HTML, Javascript, sass, etc. The development server is accessible at
+                    <code>http://localhost:5173</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td>npm run build </td>
+                  <td>Generates a /build directory with all the production files.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="introducation">
+          <h4 class="underline-style">VTalkz Setup</h4>
+          <ul>
+            <li class="subheading">Prerequisite: </li>
+          </ul>
+          <div class="main-grid2-contant-div-list">
+            <ul>
+              <li><a href="">Verify that the nodeJS version is installed (it must be version 18 or
+                  above).</a></li>
+              <li>Configure a mongoDB cluster in order to fulfill the database requirements.</li>
+              <li><a href="">Create a Redis database and configure it to hold the caches. (Make
+                  sure the
+                  redis host will be localhost and no password authentication)</a></li>
+              <li>Setup the proper facebook meta account with API access and credentials</li>
+              <li>Install the PM2 globally using the below command <br /> (npm install -g pm2)
+              </li>
+            </ul>
+          </div>
+          <ul>
+            <li class="subheading">Install Node.js and npm: </li>
+          </ul>
+          <p class="details">
+            Ensure you have Node.js and npm (Node Package Manager) installed on your machine. You can download and
+            install them from the official website: <a style="color: #3582e7;" target="_blank"
+              href="https://nodejs.org/en">Node.js</a> Make sure you are using Node version >= 18.*.
+          </p>
+          <ul>
+            <li class="subheading">Git</li>
+          </ul>
+          <p class="details">
+            Make sure to have Git installed globally & running on your computer. If you already have installed git on
+            your computer, you can skip this step.
+          </p>
+
+          <h4>Please run the below commands from the <code class="cod">VTalkz Backend</code> folder.</h4>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th align="left">Command</th>
+                  <th align="left">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>npm install </td>
+                  <td>To install all the required dependencies in the <code>'node_modules'</code> folder, simply run
+                    <code>'npm install'</code> without any arguments. This command will resolve the necessary
+                    dependencies listed in the <code>'package.json'</code> file.If you encounter any errors during the
+                    installation, please ensure that your Node.js version matches the one specified above.
+                    Alternatively, you can try using <code>'npm install --force'</code> to forcefully install the
+                    dependencies.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>env</td>
+                  <td> Duplicate the <code>env.example</code> file and rename it to <code>.env</code>.Open the
+                    <code>.env</code> file in
+                    a text editor of your choice. Look for a placeholder related to the backend URL. Replace the
+                    placeholder
+                    with the actual
+                    URL of your backend server. Save the changes to the <code>.env</code> file.
+                    <div class="main-grid2-contant3-div">
+                      <div class="main-grid2-contant3-div-box">
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>For your project, create the .env file. here is the sample env file show below.</li>
+                          <p># PROJECT_NAME = VTalkZ <br />
+                            PROJECT_NAME = vtalkz<br />
+                            PORT = 9041<br />
+                            JSON_BODY_LIMIT = 100mb
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>MongoDB URI</li>
+                          <p># MONGODB_URI = mongodb://localhost:27017/whatsapp-talkz<br />
+                            JWT_SECRET = 12345678951451feff<br />
+                            JWT_EXPIRES_IN = 7d
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>### DO NOT USE THIS IN PRODUCTION, THIS IS FOR TESTING PURPOSES ONLY ###</li>
+                          <p>Get mails sent to this address by visiting https://ethereal.email/<br />
+                            Do login with the credentials below and go to Messages
+                          </p>
+                          <div class="mg2c3-div-box-list">
+                            <ul>
+                              <li>EMAIL_USER = vtalkz@gmail.com-</li>
+                              <li>EMAIL_PASSWORD = 1fsef4fe</li>
+                              <li>EMAIL_HOST = smtp.gmail.com</li>
+                              <li>EMAIL_PORT = 465</li>
+                            </ul>
+                          </div>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>AWS S3 credentials for file uploads, default local storage is used if not provided.
+                          </li>
+                          <p>ACCESSKEYID = NFJEF51465SFCDEF<br />
+                            SECRET_KEY = 4K/kjcvfsrebnj541q+abtf9MIVs<br />
+                            REGION = ap-south-1<br />
+                            BUCKET = bucketName
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>Please leave as it is.</li>
+                          <p>WA_URL = http://localhost:3000/<br />
+                            VTALKZ_URL = http://localhost:9041/whatsapp-talkz/api/v1/
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>API_KEY_BYTES = 32</li>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>Razorpay credentials</li>
+                          <p>KEY_ID = rzp_test_GndN078z6UFr<br />
+                            KEY_SECRET = JO67LwVbuuLPbDxKjpgFh3
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>Firebase admin private key</li>
+                          <p>FIREBASE_PRIVATE_KEY
+                            <span>"-----BEGIN PRIVATE
+                              KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAQDLkADBsXJPkjjiN/JDMjr7Ax17Ca51hTq0\nebKNY8mi/SVejCOQMWNdNwXLki+Zshwon2OvnhneZtoXxFU1aRhpWdyKe7l0jOFx\nSH5Qo/dHUkDi9SsP3vzzr3LHCjdg2wiaDy527Fx5YHnN0QK+k8fbO0HlVFRDf0UV\n5WVJxftBYQKBgDJmbLZLt/I+rl5BDxrgsjRYmbb9O0fKTT1LlFhqbPVUHUzBLNNv\nksb0Tg88tw8XL8RgIX7LhxVlZcxJqAukzvTiwtYCqEMJB8pkQbNQMbwDRjLwkZJlWHJWFDfm\nasWRgWswS7fE5HI9AvSJ+sfgBJWYoj7H89wrn0ECgYA0MRl/LMJK/3zVQ2X3JM+6\nGHDr3CG6qezmDIzApI7P9VlmABfxoRCAezDW3LcBvph/XdgsV3TkKCIwyei0QiPq\nzsS23E2bDzRLkm3QBTRnrkjSzeGZqtKel/YgztmoOEjyVhvfNx1JRT2ZeDNUMsz4\nQRFxjNzpVVsjYnj/zSR2Fg==\n-----END
+                              PRIVATE KEY-----\n"
+                            </span>
+                          </p>
+                          <p>EXPIRY_REMINDER_DAYS = 5</p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>Redis credentials</li>
+                          <p>REDIS_HOST = 127.0.0.1<br />
+                            REDIS_PORT = 6379<br />
+                            REDIS_PASSWORD = 123456
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>Stripe credentials</li>
+                          <p>STRIPE_KEY
+                            <span>sk_test_51M1nubSDr0GNRFhTjcSAqz5mIkbRhq6w5R4mL0flOkwBHyL7KpIPrZI8RzePjkA7IFlrthPA6Hux9hANla7ief00Wl38gS7F</span>
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>BAckend base url</li>
+                          <p>BACKEND_API_BASE_URL =
+                            https://c78e-2405-201-200d-1c68-8367-39c1-7bf1-7d12.ngrok-free.app/whatsapp-talkz/api/v1/
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>Frontend url</li>
+                          <p>FRONTEND_URL = http://localhost:5173/dashboard</p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>SUPPORT_PHONE_NUMBER = 919999999999</li>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>Webhook for the facebook meta API</li>
+                          <p>WEBHOOK_BASE_URL =
+                            https://api.yourdomainname.com/api/v1/official-instance/receive-message-webhook/656192a3da61070211c92775
+                          </p>
+                        </ul>
+                      </div>
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>facebook base url</li>
+                          <p>FACEBOOK_BASE_URL =
+                            https://api.yourdomainname.com/api/v1/official-instance/receive-message-webhook/
+                          </p>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>npm run start</td>
+                  <td>
+                    Runs the project locally, starts the development server and watches for any changes in your code.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="introducation">
+          <h4 class="underline-style">WhatsappJS Setup</h4>
+          <ul>
+            <li class="subheading">Prerequisite: </li>
+          </ul>
+          <div class="main-grid2-contant-div-list">
+            <ul>
+              <li><a href="">Verify that the nodeJS version is installed (it must be version 18 or
+                  above).</a></li>
+              <li>Need to install the puppeteer packages <br /> For Ubantu: <br />
+                sudo apt-get install gconf-service libasound2 libatk1.0-0 libc6 libcairo2
+                libcups2
+                libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0
+                libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6
+                libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6
+                libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates
+                fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget <br />
+                sudo apt-get install -y libgbm-dev
+              </li>
+              <li>Install the PM2 globally using the below command
+                <br /> (npm install -g pm2)
+              </li>
+            </ul>
+          </div>
+          <ul>
+            <li class="subheading">Install Node.js and npm: </li>
+          </ul>
+          <p class="details">
+            Ensure you have Node.js and npm (Node Package Manager) installed on your machine. You can download and
+            install them from the official website: <a style="color: #3582e7;" target="_blank"
+              href="https://nodejs.org/en">Node.js</a> Make sure you are using Node version >= 18.*.
+          </p>
+          <ul>
+            <li class="subheading">Git</li>
+          </ul>
+          <p class="details">
+            Make sure to have Git installed globally & running on your computer. If you already have installed git on
+            your computer, you can skip this step.
+          </p>
+
+          <h4>Please run the below commands from the <code class="cod">WhatsappJS Backend</code> folder.</h4>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th align="left">Command</th>
+                  <th align="left">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>npm install </td>
+                  <td>To install all the required dependencies in the <code>'node_modules'</code> folder, simply run
+                    <code>'npm install'</code> without any arguments. This command will resolve the necessary
+                    dependencies listed in the <code>'package.json'</code> file.If you encounter any errors during the
+                    installation, please ensure that your Node.js version matches the one specified above.
+                    Alternatively, you can try using <code>'npm install --force'</code> to forcefully install the
+                    dependencies.
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>env</td>
+                  <td> Duplicate the <code>.env.example</code> file and rename it to <code>.env</code>.Open the
+                    <code>.env</code> file in
+                    a text editor of your choice. Look for a placeholder related to the backend URL. Replace the
+                    placeholder
+                    with the actual
+                    URL of your backend server. Save the changes to the <code>.env</code> file.
+                    <div class="main-grid2-contant3-div">
+                      <div class="main-grid2-contant3-div-box">
+                        <ul>
+                          <li>Env:</li>
+                          <p>MONGO_URI = mongodb://localhost:27017/master<br />
+                            PORT = 3000<br />
+                            VTALKZ_URL = http://localhost:9041/api/v1/<br />
+                            MAX_INSTANCE_PER_SERVER = 2
+                          </p>
+                        </ul>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>npm run start</td>
+                  <td>
+                    Runs the project locally, starts the development server and watches for any changes in your code.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Frontend setup end -->
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

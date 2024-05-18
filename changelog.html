@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/GettingStarted.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+<link rel="shortcut icon" href="images/favicon.webp">
+  <title>Changelog</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-alignment">
+      <div class="logo-alignment">
+        <a href="index.html">
+          <img src="Images/Logo/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div onclick="myFunction()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+          <path opacity="1" fill="#fff"
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </div>
+  </header>
+  <div class="mobile-landing-header-design mobile-landing-hidden" id="mobilemenu">
+    <div class="sidebar-header-alignment">
+      <a href="index.html">
+        <img src="Images/Logo/logo.png" alt="logo" />
+      </a>
+      <div onclick="myFunction()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+          <path opacity="1" fill="#fff"
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+      </div>
+    </div>
+    <div class="sidebar-body">
+      <div class="sidebar-alignment">
+        <div class="logo-alignment">
+          <a href="index.html">
+            <img src="Images/Logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="sidebar-details-alignment">
+          <a href="index.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Introduction</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="technology-used.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Technology Used</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          
+          <a>
+            <div class="listMenuItem" id="toggleButton">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Folder Structure</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent">
+            <a href="admin.html"> - Frontend </a>
+            <a href="backend.html"> - Backend </a>
+          </div>
+          <a href="setup.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Setup</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="sass-customization.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Scss Customization</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton1">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Features</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent1">
+            <a href="admin-feature.html"> - Admin </a>
+  <a href="super-admin.html"> - Super Admin </a>
+  <a href="user.html"> - User </a>
+          </div>
+          <a href="sources-credits.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Sources & Credits</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="changelog.html">
+            <div class="listMenuItem active">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Changelog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-view-section">
+    <div class="wrapper-alignment">
+      <div class="sidebar-alignment sidebar-alignment-hide">
+        <div class="logo-alignment">
+          <a href="index.html">
+            <img src="Images/Logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="sidebar-details-alignment">
+          <a href="index.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Introduction</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="technology-used.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Technology Used</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton2">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Folder Structure</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent2">
+            <a href="admin.html"> - Frontend </a>
+            <a href="backend.html"> - Backend </a>
+          </div>
+          <a href="setup.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Setup</span>
+                </div>
+              </div>
+            </div>
+          </a>
+         
+          <a href="sass-customization.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Scss Customization</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton3">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Features</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent3">
+            <a href="admin-feature.html"> - Admin </a>
+            <a href="super-admin.html"> - Super Admin </a>
+            <a href="user.html"> - User </a>
+          </div>
+          <a href="sources-credits.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Sources & Credits</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="changelog.html">
+            <div class="listMenuItem active">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Changelog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="sub-container">
+        <div class="introducation">
+          <h4 class="m-4">Changelog</h4>
+          <h5 style="font-size: 18px; color: #8ebbad; margin: 0 0 16px 0; font-weight: 500;">v 1.0.0 - 17 May 2024</h5>
+          <p>- Initial release.</p>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

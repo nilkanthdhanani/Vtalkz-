@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Folder Structure</title>
+  <link rel="stylesheet" href="css/AdminStructure.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="shortcut icon" href="images/favicon.webp">
+</head>
+
+<body>
+  <header>
+    <div class="header-alignment">
+      <div class="logo-alignment">
+        <a href="index.html">
+          <img src="Images/Logo/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div onclick="myFunction()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+          <path opacity="1" fill="#fff"
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </div>
+  </header>
+  <div class="mobile-landing-header-design mobile-landing-hidden" id="mobilemenu">
+    <div class="sidebar-header-alignment">
+      <a href="index.html">
+        <img src="Images/Logo/logo.png" alt="logo" />
+      </a>
+      <div onclick="myFunction()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+          <path opacity="1" fill="#fff"
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+      </div>
+    </div>
+    <div class="sidebar-body">
+      <div class="sidebar-alignment">
+        <div class="logo-alignment">
+          <a href="index.html">
+            <img src="Images/Logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="sidebar-details-alignment">
+          <a href="index.html">
+            <div class="listMenuItem active">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Introduction</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="technology-used.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Technology Used</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Folder Structure</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment" id="hiddenContent">
+            <a href="admin.html" class="active"> - Frontend </a>
+            <a href="backend.html"> - Backend </a>
+          </div>
+          <a href="setup.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Setup</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="sass-customization.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Scss Customization</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton1">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Features</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent1">
+            <a href="admin-feature.html"> - Admin </a>
+            <a href="super-admin.html"> - Super Admin </a>
+            <a href="user.html"> - User </a>
+          </div>
+          <a href="sources-credits.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Sources & Credits</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="changelog.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Changelog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-view-section">
+    <div class="wrapper-alignment">
+      <div class="sidebar-alignment sidebar-alignment-hide">
+        <div class="logo-alignment">
+          <a href="index.html">
+            <img src="Images/Logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="sidebar-details-alignment">
+          <a href="index.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Introduction</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="technology-used.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Technology Used</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem active" id="toggleButton2">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Folder Structure</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment" id="hiddenContent2">
+            <a href="admin.html" class="active"> - Frontend </a>
+            <a href="backend.html"> - Backend </a>
+          </div>
+          <a href="setup.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Setup</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="sass-customization.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Scss Customization</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton3">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Features</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent3">
+            <a href="admin-feature.html"> - Admin </a>
+            <a href="super-admin.html"> - Super Admin </a>
+            <a href="user.html"> - User </a>
+          </div>
+          <a href="sources-credits.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Sources & Credits</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="changelog.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Changelog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="sub-container">
+        <div class="folderstructure">
+          <h4>FOLDER STRUCTURE</h4>
+
+          <pre class="mb-0 col">
+    ├───📁public
+    └───📁src
+        ├───📁@core
+        │   ├───📁assets
+        │   │   └───📁fonts
+        │   │       └───📁feather
+        │   │           └───📁fonts
+        │   ├───📁auth
+        │   │   └───📁jwt
+        │   ├───📁components
+        │   │   ├───📁autocomplete
+        │   ├───📁avatar
+        │   │   ├───📁avatar-group
+        │   │   ├───📁breadcrumbs
+        │   │   ├───📁card-actions
+        │   │   ├───📁card-snippet
+        │   │   ├───📁customizer
+        │   │   ├───📁extensions-header
+        │   │   ├───📁input-password-toggle
+        │   │   ├───📁repeater
+        │   │   ├───📁ripple-button
+        │   │   ├───📁routes
+        │   │   ├───📁scrolltop
+        │   │   ├───📁sidebar
+        │   │   ├───📁spinner
+        │   │   ├───📁statistics-card
+        │   │   ├───📁timeline
+        │   │   ├───📁ui-loader
+        │   │   ├───📁widgets
+        │   │   │   └───📁stats
+        │   │   └───📁wizard
+        │   ├───📁layouts
+        │   │   └───📁components
+        │   │       ├───📁footer
+        │   │       ├───📁layout-wrapper
+        │   │       ├───📁menu
+        │   │       │   ├───📁horizontal-menu
+        │   │       │   └───📁vertical-menu
+        │   │       └───📁navbar
+        │   └───📁scss
+        │       ├───📁base
+        │       │   ├───📁bootstrap-extended
+        │       │   │   ├───📁forms
+        │       │   │   └───📁mixins
+        │       │   ├───📁components
+        │       │   ├───📁core
+        │       │   │   ├───📁colors
+        │       │   │   ├───📁layouts
+        │       │   │   ├───📁menu
+        │       │   │   │   └───📁menu-types
+        │       │   │   └───📁mixins
+        │       │   ├───📁pages
+        │       │   ├───📁plugins
+        │       │   │   ├───📁charts
+        │       │   │   ├───📁extensions
+        │       │   │   ├───📁forms
+        │       │   │   │   ├───📁pickers
+        │       │   │   │   └───📁select2
+        │       │   │   ├───📁maps
+        │       │   │   ├───📁tables
+        │       │   │   └───📁ui
+        │       │   └───📁themes
+        │       └───📁react
+        │           ├───📁apps
+        │           ├───📁libs
+        │           │   ├───📁charts
+        │           │   ├───📁drag-and-drop
+        │           │   ├───📁editor
+        │           │   ├───📁file-uploader
+        │           │   ├───📁flatpickr
+        │           │   ├───📁input-number
+        │           │   ├───📁noui-slider
+        │           │   ├───📁react-hot-toasts
+        │           │   ├───📁react-select
+        │           │   ├───📁shepherd-tour
+        │           │   ├───📁swiper
+        │           │   └───📁tables
+        │           ├───📁pages
+        │           └───📁reactstrap
+        ├───📁@fake-db
+        │   ├───📁apps
+        │   ├───📁autoComplete
+        │   ├───📁cards
+        │   ├───📁jwt
+        │   ├───📁navbar
+        │   ├───📁pages
+        │   ├───📁select
+        │   └───📁tables
+        ├───📁api
+        ├───📁assets
+        │   ├───📁data
+        │   │   └───📁locales
+        │   ├───📁images
+        │   │   ├───📁avatars
+        │   │   ├───📁backgrounds
+        │   │   ├───📁banner
+        │   │   ├───📁dropzone
+        │   │   ├───📁elements
+        │   │   ├───📁ico
+        │   │   ├───icons
+        │   │   │   ├───📁brands
+        │   │   │   ├───📁file-icons
+        │   │   │   ├───📁payments
+        │   │   │   ├───📁social
+        │   │   │   └───📁technology
+        │   │   ├───📁illustration
+        │   │   ├───📁jstree
+        │   │   │   └───📁themes
+        │   │   │       ├───📁default
+        │   │   │       └───📁default-dark
+        │   │   ├───📁logo
+        │   │   ├───📁misc
+        │   │   ├───📁pages
+        │   │   │   ├───📁carousel
+        │   │   │   ├───📁eCommerce
+        │   │   │   └───📁login
+        │   │   ├───📁portrait
+        │   │   │   └───📁small
+        │   │   ├───📁profile
+        │   │   │   ├───📁pages
+        │   │   │   ├───📁post-media
+        │   │   │   └───📁user-uploads
+        │   │   ├───📁raty
+        │   │   ├───📁slider
+        │   │   └───📁svg
+        │   └───📁scss
+        │       └───📁variables
+        ├───📁auth
+        │   └───📁jwt
+        ├───📁configs
+        │   ├───📁acl
+        │   └───📁i18n
+        ├───📁helpers 
+        ├───📁layouts
+        ├───📁navigation
+        │   ├───📁horizontal
+        │   └───📁vertical
+        ├───📁redux
+        ├───📁router
+        │   └───📁routes
+        ├───📁socket
+        ├───📁store
+        │   └───📁ApiSlice
+        ├───📁utility
+        │   ├───📁context
+        │   └───📁hooks
+        └───📁views
+            ├───📁apps
+            │   ├───📁BlogSection
+            │   │   └───📁list
+            │   ├───📁calendar
+            │   │   └───📁store
+            │   ├───📁chat
+            │   │   ├───📁AssignChat
+            │   │   └───📁store
+            │   ├───📁ChatBot
+            │   │   ├───📁list
+            │   │   └───📁listChatBot
+            │   ├───📁compMessage
+            │   │   ├───📁list
+            │   │   └───📁store
+            │   ├───📁contacts
+            │   │   ├───📁list
+            │   │   ├───📁store
+            │   │   └───📁view
+            │   ├───📁ContactUs
+            │   │   └───📁list
+            │   ├───📁ecommerce
+            │   │   ├───📁checkout
+            │   │   │   └───📁steps
+            │   │   ├───📁detail
+            │   │   ├───📁shop
+            │   │   ├───📁store
+            │   │   └───📁wishlist
+            │   ├───📁email
+            │   │   └───📁store
+            │   ├───📁Emergency
+            │   │   ├───📁history
+            │   │   └───📁list
+            │   ├───📁groups
+            │   │   ├───📁list
+            │   │   │   └───📁Pagination
+            │   │   ├───📁store
+            │   │   └───📁view
+            │   ├───📁instances
+            │   │   ├───📁list
+            │   │   ├───📁store
+            │   │   └───📁view
+            │   ├───📁integrations
+            │   │   └───📁list
+            │   ├───📁invoice
+            │   │   ├───📁add
+            │   │   ├───📁edit
+            │   │   ├───📁list
+            │   │   ├───📁preview
+            │   │   ├───📁print 
+            │   │   ├───📁shared-sidebar
+            │   │   └───📁store
+            │   ├───📁kanban
+            │   │   └───📁store
+            │   ├───📁NewFeatures
+            │   │   └───📁list
+            │   ├───📁News
+            │   │   └───📁list
+            │   ├───📁OutsideClick.js
+            │   ├───📁party-master
+            │   │   ├───📁list
+            │   │   ├───📁store
+            │   │   ├───📁user-management
+            │   │   └───📁view
+            │   ├───📁plans
+            │   │   ├───📁list
+            │   │   ├───📁store
+            │   │   └───📁view
+            │   ├───📁QrCode
+            │   │   └───📁list
+            │   ├───📁reports
+            │   │   ├───📁list
+            │   │   ├───📁store
+            │   │   └───📁view
+            │   ├───📁roles-permissions
+            │   │   ├───📁permissions
+            │   │   ├───📁roles
+            │   │   └───📁store
+            │   ├───📁salesman-master
+            │   │   ├───📁list
+            │   │   ├───📁store
+            │   │   └───📁view
+            │   ├───📁tamplets
+            │   │   ├───📁list
+            │   │   │   ├───📁Category
+            │   │   │   ├───📁SubCategory
+            │   │   │   └───📁TemplatePreview
+            │   │   ├───📁store
+            │   │   └───📁view
+            │   ├───📁todo
+            │   │   └───📁store
+            │   ├───📁user
+            │   │   ├───📁list
+            │   │   ├───📁store
+            │   │   └───📁view
+            │   ├───📁videoGuid
+            │   │   └───📁list
+            │   └───📁WebsiteContent
+            │       └───📁list
+            ├───📁charts
+            │   ├───📁apex
+            │   ├───📁chart-js
+            │   └───📁recharts
+            ├───📁components
+            │   ├───📁accordion
+            │   ├───📁alerts
+            │   ├───📁autocomplete
+            │   ├───📁avatar
+            │   ├───📁badge
+            │   ├───📁badgePills
+            │   ├───📁block-ui
+            │   ├───📁breadcrumbs
+            │   ├───📁buttons
+            │   ├───📁carousel
+            │   ├───📁collapse
+            │   ├───📁divider
+            │   ├───📁dropdowns
+            │   ├───📁listGroup
+            │   ├───📁Loder
+            │   ├───📁modal
+            │   ├───📁navComponent
+            │   ├───📁offcanvas
+            │   ├───📁pagination
+            │   ├───📁popovers
+            │   ├───📁progress
+            │   ├───📁spinners
+            │   ├───📁tabPills
+            │   ├───📁tabs
+            │   ├───📁timeline
+            │   ├───📁toasts
+            │   └───📁tooltips
+            ├───📁dashboard
+            │   ├───📁analytics
+            │   └───📁ecommerce
+            ├───📁extensions
+            │   ├───📁access-control
+            │   ├───📁copy-to-clipboard
+            │   ├───📁drag-and-drop
+            │   ├───📁i18n
+            │   ├───📁import-export
+            │   ├───📁pagination
+            │   ├───📁ratings
+            │   ├───📁react-hot-toasts
+            │   ├───📁sliders
+            │   ├───📁sweet-alert
+            │   ├───📁swiper
+            │   └───📁tour
+            ├───📁forms
+            │   ├───📁form-elements
+            │   │   ├───📁checkboxes
+            │   │   ├───📁datepicker
+            │   │   ├───📁editor
+            │   │   ├───📁file-uploader
+            │   │   ├───📁input
+            │   │   ├───📁input-groups
+            │   │   ├───📁input-mask
+            │   │   ├───📁number-input
+            │   │   ├───📁radio
+            │   │   ├───📁select
+            │   │   ├───📁switch
+            │   │   └───📁textarea
+            │   ├───📁form-layouts
+            │   ├───📁form-repeater
+            │   ├───📁validation
+            │   └───📁wizard
+            │       ├───📁steps
+            │       └───📁steps-with-validation
+            ├───📁pages
+            │   ├───📁account-settings
+            │   ├───📁api-key
+            │   ├───📁authentication
+            │   │   └───📁register-multi-steps
+            │   │       └───📁steps
+            │   ├───📁blog
+            │   │   ├───📁details
+            │   │   ├───📁edit
+            │   │   └───📁list
+            │   ├───📁faq
+            │   ├───📁knowledge-base
+            │   ├───📁license
+            │   ├───📁misc
+            │   ├───📁modal-examples
+            │   │   └───📁create-app-steps
+            │   ├───📁pricing
+            │   └───📁profile
+            ├───📁tables
+            │   ├───📁data-tables
+            │   │   ├───📁advance
+            │   │   ├───📁basic
+            │   │   └───📁store
+            │   └───📁reactstrap
+            └───📁ui-elements
+                ├───📁cards
+                │   ├───📁actions
+                │   ├───📁advance
+                │   ├───📁analytics
+                │   ├───📁basic
+                │   └───📁statistics
+                ├───📁icons
+                ├───📁page-layouts
+                └───📁typography
+          </pre>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

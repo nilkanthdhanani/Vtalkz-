@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(8, 28, 25, 1);
+  font-display: swap;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.main-view-section .wrapper-alignment {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+}
+
+.sub-container {
+  padding: 0 40px;
+  margin: 0 0 40px 0;
+}
+.introducation {
+  background-color: #1f312f;
+  padding: 32px;
+  margin: 80px 0 0 0;
+  border-radius: 20px;
+}
+
+h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+
+h6 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+
+ul {
+  list-style: circle;
+  padding-left: 1.25rem;
+}
+
+li {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 20px 0;
+}
+
+.he {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.7;
+  margin: 0 0 20px 0;
+}
+
+table {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-collapse: collapse;
+}
+table thead tr {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+table thead tr th {
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+table tbody tr td:first-child {
+  white-space: nowrap;
+  align-content: start;
+}
+
+table tbody tr td {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: 1px solid rgb(255 255 255 / 0.25);
+}
+
+.main-grid2-contant3-div {
+  padding-top: 15px;
+}
+
+.main-grid2-contant3-div-box ul {
+  list-style: circle;
+  padding: 0 0 10px 20px;
+  margin: 0;
+}
+
+.main-grid2-contant3-div-box ul li {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.main-grid2-contant3-div-box p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 18px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.main-grid2-contant3-div-box p span {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  word-break: break-all;
+}
+
+.mg2c3-div-box-list ul {
+  list-style: square;
+  padding: 0 0 0 30px;
+}
+
+.mg2c3-div-box-list ul li span {
+  color: #d75252;
+  font-weight: 700;
+}
+
+.mg2c3-div-box-list ul li {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.main-grid2-contant-div-list ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+  list-style: square;
+}
+
+.main-grid2-contant-div-list ul li {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 18px;
+  letter-spacing: 1px;
+  margin: 0 0 10px 20px;
+}
+
+.main-grid2-contant-div-list ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration-line: underline;
+}
+
+.main-grid2-contant-div-list2 {
+  margin-top: 20px;
+}
+
+.list-text {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.7;
+  margin: 0 0 20px 0;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.text-success {
+  color: #3c763d;
+}
+
+.alert-info {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #bce8f1;
+  border-radius: 4px;
+  color: #31708f;
+  background-color: #d9edf7;
+}
+
+.underline-style {
+  border-bottom: 1px solid #dff0d8;
+  padding-bottom: 1px;
+  display: inline-block;
+}
+
+.ri-honour-line {
+  width: 100%; /* Adjust the width as needed */
+  height: 2px; /* Adjust the height or thickness of the line */
+  background-color: #000; /* Adjust the color of the line */
+  margin: 10px 0; /* Adjust the margin as needed */
+}
+
+@media (max-width: 768px) {
+  .main-view-section .wrapper-alignment {
+    grid-template-columns: 1fr;
+    display: block;
+    gap: 0;
+  }
+  .sub-container {
+    padding: 0 20px;
+  }
+  .introducation {
+    padding: 20px;
+  }
+  .m-final img {
+    width: 100%;
+  }
+}

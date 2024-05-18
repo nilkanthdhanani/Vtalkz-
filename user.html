@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User</title>
+  <link rel="stylesheet" href="css/JavaScriptStructure.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="shortcut icon" href="images/favicon.webp">
+</head>
+
+<body>
+  <header>
+    <div class="header-alignment">
+      <div class="logo-alignment">
+        <a href="index.html">
+          <img src="Images/Logo/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div onclick="myFunction()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+          <path opacity="1" fill="#fff"
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </div>
+  </header>
+  <div class="mobile-landing-header-design mobile-landing-hidden" id="mobilemenu">
+    <div class="sidebar-header-alignment">
+      <a href="index.html">
+        <img src="Images/Logo/logo.png" alt="logo" />
+      </a>
+      <div onclick="myFunction()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+          <path opacity="1" fill="#fff"
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+      </div>
+    </div>
+    <div class="sidebar-body">
+      <div class="sidebar-alignment">
+        <div class="logo-alignment">
+          <a href="index.html">
+            <img src="Images/Logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="sidebar-details-alignment">
+          <a href="index.html">
+            <div class="listMenuItem active">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Introduction</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="technology-used.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Technology Used</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Folder Structure</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent">
+            <a href="admin.html"> - Frontend </a>
+            <a href="backend.html"> - Backend </a>
+          </div>
+          <a href="setup.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Setup</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="sass-customization.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Scss Customization</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem" id="toggleButton1">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Features</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment" id="hiddenContent1">
+            <a href="admin-feature.html"> - Admin </a>
+            <a href="super-admin.html"> - Super Admin </a>
+            <a href="user.html" class="active"> - User </a>
+          </div>
+          <a href="sources-credits.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Sources & Credits</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="changelog.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Changelog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-view-section">
+    <div class="wrapper-alignment">
+      <div class="sidebar-alignment sidebar-alignment-hide">
+        <div class="logo-alignment">
+          <a href="index.html">
+            <img src="Images/Logo/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="sidebar-details-alignment">
+          <a href="index.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Introduction</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="technology-used.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Technology Used</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a>
+            <div class="listMenuItem" id="toggleButton2">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Folder Structure</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="childListAlignment hidden" id="hiddenContent2">
+            <a href="admin.html"> - Frontend </a>
+            <a href="backend.html"> - Backend </a>
+          </div>
+          <a href="setup.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Setup</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="sass-customization.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Scss Customization</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a>
+            <div class="listMenuItem active" id="toggleButton3">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <div class="rightContnetAlignment">
+                    <span>Features</span>
+                    <div class="iconAlignment">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                        <path
+                          d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <div class="" id="">
+            <div class="childListAlignment" id="hiddenContent1">
+              <a href="admin-feature.html"> - Admin </a>
+              <a href="super-admin.html"> - Super Admin </a>
+              <a href="user.html" class="active"> - User </a>
+            </div>
+          </div>
+          <a href="sources-credits.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Sources & Credits</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="changelog.html">
+            <div class="listMenuItem">
+              <div class="listMenuItemDetails">
+                <div class="leftName">
+                  <div class="icon"></div>
+                  <span>Changelog</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="sub-container">
+        <div class="javascriptstructure">
+          <h4>User Common Features</h4>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Groups:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Manage groups: <span>Provides tools to create, update, and delete groups for
+                    organizing contacts.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Whatsapp Instance:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Manage added WhatsApp instances: <span>Admin can add, update, and manage WhatsApp
+                    accounts associated with the platform.</span></li>
+                <li>Connect / Disconnect WhatsApp account: <span>Allows connecting or disconnecting a
+                    WhatsApp account from the platform.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Report Details:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <h4>1. Chart View:</h4>
+              <div class="main-grid2-contant-div2-list2">
+                <ul>
+                  <li>View date-wise text, audio, video, template, group, file message report:
+                    <span>Presents a visual chart representation of message types over time.</span>
+                  </li>
+                </ul>
+              </div>
+              <h4>2. User Message:</h4>
+              <div class="main-grid2-contant-div2-list2">
+                <ul>
+                  <li>Per day messages: <span>Provides a count of messages sent per day.</span></li>
+                  <li>Filter by date: <span>Allows filtering messages based on specific dates.</span>
+                  </li>
+                  <li>Find user: <span>Enables searching for messages sent by a particular
+                      user.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Campaigns History:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Message Content: <span>Displays the content of messages sent as part of
+                    campaigns.</span></li>
+                <li>Sent Messages: <span>Shows the number of messages successfully sent.</span></li>
+                <li>Pending Messages: <span>Indicates messages waiting to be sent.</span></li>
+                <li>Total Messages: <span>Provides a total count of all messages.</span></li>
+                <li>Seen Messages: <span>Displays messages that have been viewed by recipients.</span>
+                </li>
+                <li>Delivered Messages: <span>Shows messages successfully delivered to
+                    recipients.</span></li>
+                <li>Failed Messages: <span>Indicates messages that failed to be delivered.</span></li>
+                <li>Resume Campaign: <span>Allows resuming a paused campaign.</span></li>
+                <li>Stop Campaign: <span>Stops an ongoing campaign.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Integration:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>View API Docs: <span>Provides access to API documentation for integration
+                    purposes.</span></li>
+                <li>View / Download All Videos for all features: <span>Offers video tutorials for
+                    understanding and integrating platform features.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Profile:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Updates user profiles.</li>
+                <li>Views transferred credits.</li>
+                <li>Directly messages users on WhatsApp.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="javascriptstructure2">
+          <h4>Whatsapp Official Services</h4>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Dashboard View:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Showing Remaining days: <span>Displays the remaining days of service
+                    subscription.</span></li>
+                <li>Analysis:</li>
+                <div class="main-grid2-contant-div2-list1">
+                  <ul>
+                    <li>Groups: <span>Provides insights and analysis related to groups within the
+                        platform.</span></li>
+                    <li>Contacts: <span>Analyzes contact information and interactions.</span></li>
+                    <li>Templates: <span>Offers analysis of templates created and used.</span></li>
+                    <li>Instance: <span>Provides data and insights related to WhatsApp
+                        instances.</span>
+                    </li>
+                  </ul>
+                </div>
+                <li>Statistics:</li>
+                <div class="main-grid2-contant-div2-list1">
+                  <ul>
+                    <li>Pending message: <span>Provides statistics related to pending messages to be
+                        send within the platform.</span></li>
+                    <li>Message sent: <span>Displays the count of total sent messages.</span></li>
+                    <li>Delivered: <span>Displays the count of total delivered messages.</span>
+                    </li>
+                    <li>Read message: <span>Displays the count of total read messages.</span></li>
+                    <li>Failed message: <span>Displays the count of total failed messages.</span>
+                    </li>
+                    <li>Total message: <span>Displays the count of total Total messages to
+                        send.</span></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Templates:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Your Templates: <span>Manages user-added templates, including options for editing
+                    buttons, website links, coupon codes, and contact details.</span></li>
+                <li>VTalkz Default Templates (Categorized): <span>Manages default templates categorized
+                    for direct sharing and previewing.</span></li>
+                <li>Interactive Templates: <span>Manages interactive templates such as product lists,
+                    catalogues, and buttons.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Shared Inbox:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Assign Chats to Team Members: <span>Facilitates assigning chat responsibilities
+                    among team members.</span></li>
+                <li>Chatting with Customers: <span>Enables communication with customers through various
+                    message types like text, media, audio, and files.</span></li>
+                <div class="main-grid2-contant-div2-list1">
+                  <ul>
+                    <li>Message Replies: <span>Handles replies to customer messages.</span></li>
+                    <li>Message Reaction: <span>Manages reactions to messages.</span></li>
+                    <li>Medias / Text Messages / Audio Message / Files: <span>Supports various
+                        message formats.</span></li>
+                  </ul>
+                </div>
+                <li>Show shared templates: <span>Displays templates shared within the shared
+                    inbox.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="javascriptstructure2">
+          <h4>Vtalkz Service</h4>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Dashboard View:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Showing Remaining days: <span>Displays the remaining days of service
+                    subscription.</span></li>
+                <li>Analysis:</li>
+                <div class="main-grid2-contant-div2-list1">
+                  <ul>
+                    <li>Groups: <span>Provides insights and analysis related to groups within the
+                        platform.</span></li>
+                    <li>Contacts: <span>Analyzes contact information and interactions.</span></li>
+                    <li>Templates: <span>Offers analysis of templates created and used.</span></li>
+                    <li>Instance: <span>Provides data and insights related to WhatsApp
+                        instances.</span>
+                    </li>
+                  </ul>
+                </div>
+                <li>Statistics:</li>
+                <div class="main-grid2-contant-div2-list1">
+                  <ul>
+                    <li>Instances: <span>Provides statistics related to instances within the
+                        platform.</span></li>
+                    <li>Active Instances: <span>Displays the count of active instances.</span></li>
+                    <li>Inactive Instances: <span>Indicates the number of inactive instances.</span>
+                    </li>
+                    <li>No. of Reseller: <span>Shows the total number of resellers associated with
+                        the
+                        platform.</span></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Templates:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Your Templates: <span>Manages user-added templates, including options for editing and
+                    previewing.</span></li>
+                <li>Template Preview: <span>Allows previewing templates before finalizing.</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-grid2-contant-div2-main">
+            <h3>Message Responders:</h3>
+            <div class="main-grid2-contant-div2-list">
+              <ul>
+                <li>Auto Responder: <span>Manages automated responses to client messages, enhancing user
+                    interaction.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
