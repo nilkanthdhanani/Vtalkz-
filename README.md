@@ -1,1 +1,1 @@
-Link = https://flowpoint-zeta.vercel.app/
+Link = https://vtalkz.vercel.app/
